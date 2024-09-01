@@ -14,11 +14,11 @@ while True:
         print("Please enter a food item")
         food = input("Enter food item(q to quit): ")
     else:   
-        price = float(input(f"Enter the price of a {food}$: "))
+        price = float(input(f"Enter the price of {food}: $"))
 
         while price == str("") or price == 0:
             print("Please enter a number")
-            price = float(input(f"Enter the price of a {food}$: ")) 
+            price = float(input(f"Enter the price of {food}: $")) 
         foods.append(food)
         prices.append(price)
 
